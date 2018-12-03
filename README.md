@@ -1,36 +1,36 @@
 courb-tooltip
 ==============================================================================
 
-[Short description of the addon.]
+This Ember addon is a UI component library that lets us import/use components from other coUrbanize repos faster and more easily.
 
-Installation
-------------------------------------------------------------------------------
+#### Currently includes
+- courb-tooltip 
 
-```
-ember install courb-tooltip
-```
-
-
-Usage
-------------------------------------------------------------------------------
-
-[Longer description of how to use the addon in apps.]
-
-
-Contributing
+About
 ------------------------------------------------------------------------------
 
 ### Installation
 
-* `git clone <repository-url>`
-* `cd courb-tooltip`
-* `npm install`
+Run the following code in the terminal to install:
 
-### Linting
+```
+ember install @courbanize/courb-common-ui
+```
 
-* `npm run lint:hbs`
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
+### Usage
+
+The addon will import components upon installation. CSS and styling are taken directly from courb-admin and should be modified as needed. 
+
+### Dependencies
+
+- `ember-auto-import`
+- `ember-cli-babel`
+- `ember-cli-htmlbars`
+- `tooltip.js`
+
+
+Contributing
+------------------------------------------------------------------------------
 
 ### Running tests
 

@@ -18,6 +18,10 @@ yarn run storybook
 
 It will open a browser and display the coUrbanize Common UI storybook at http://localhost:9001 .
 
+##### Stories:
+- `courb-tooltip.js`
+- `fonts.js`
+
 ### Adding stories
 
 Stories are created in `/stories`. Please see the [Storybook docs](https://storybook.js.org/basics/writing-stories/) for details on how to create write stories.

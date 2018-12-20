@@ -1,2 +1,7 @@
 @import 'courb-common-ui/colors';
+@import 'courb-common-ui/fonts';
 @import 'courb-common-ui/components/courb-tooltip';
+
+body {
+  @extend %base-font;
+}

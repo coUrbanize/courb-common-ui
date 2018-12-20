@@ -11,8 +11,8 @@ addDecorator(
 addDecorator(withNotes);
 
 function loadStories() {
-  require('../stories/index.js');
-  // You can require as many stories as you need.
+  const stories = require.context('../stories', true, /.js/);
+  stories.keys().forEach(filename => stories(filename));
 }
 
 configure(loadStories, module);

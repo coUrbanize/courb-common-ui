@@ -1,17 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500|Roboto:400,500');
+
+$primary-font-family: 'Raleway', sans-serif;
+$secondary-font-family: 'Roboto', sans-serif;
 
 // Fonts
 %base-font {
-  color: $slate;
-  font-family: 'Raleway';
+  color: $slate-light;
+  font-family: $primary-font-family;
   font-size: 10px;
 }
 
 .body {
-  font-family: 'Raleway';
+  font-family: $primary-font-family;
 
   &--medium {
-    color: $slate;
+    color: $slate-light;
     font-size: 1.6rem;
     letter-spacing: 0;
     line-height: 2.8rem;
@@ -19,8 +22,8 @@
 }
 
 .h1 {
-  color: $blue-light;
-  font-family: 'Roboto';
+  color: $slate-light;
+  font-family: $secondary-font-family;
   font-style: normal;
   letter-spacing: 0;
   line-height: 1.4;
@@ -37,8 +40,8 @@
     font-weight: 500;
   }
 
-  &--gray-light {
-    color: $gray-light;
+  &--light-gray {
+    color: $white-smoke;
   }
 
   &--forest-green {
@@ -47,7 +50,7 @@
 }
 
 .h2 {
-  font-family: 'Raleway';
+  font-family: $primary-font-family;
   font-style: normal;
   letter-spacing: 0.2rem;
 
@@ -78,7 +81,7 @@
   }
 
   &--slate-light {
-    color: $slate;
+    color: $slate-light;
   }
 
   &--slate-dark {
@@ -87,7 +90,7 @@
 }
 
 .h3-roboto {
-  font-family: 'Roboto';
+  font-family: $secondary-font-family;
   font-style: normal;
 
   &--small {
@@ -106,7 +109,7 @@
 
   &--large {
     font-size: 2.8rem;
-    font-weight: normal;
+    font-weight: 400;
     letter-spacing: 0;
     line-height: normal;
   }
@@ -137,7 +140,7 @@
 }
 
 .h3-raleway {
-  font-family: 'Raleway';
+  font-family: $primary-font-family;
   font-size: 1.8rem;
   letter-spacing: 0;
   line-height: 3rem;

@@ -66,6 +66,11 @@ The addon will import components and styles upon installation.
 
 For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
 
+### Releasing a new version to NPM
+
+- `yarn version --minor`
+- `yarn publish --access public`
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE.md).

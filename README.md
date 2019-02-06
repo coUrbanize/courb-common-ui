@@ -91,6 +91,7 @@ For more information on using ember-cli, visit [https://ember-cli.com/](https://
 
 ### Releasing a new version to NPM
 
+- `git checkout master`
 - `yarn version --minor`
 - `git push`
 - `git push --tags`

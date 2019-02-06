@@ -1,7 +1,9 @@
 @import 'courb-common-ui/colors';
 @import 'courb-common-ui/fonts';
 @import 'courb-common-ui/components/courb-tooltip';
+@import 'courb-common-ui/components/courb-button';
 
 body {
   @extend %base-font;
+  margin: 2rem;
 }

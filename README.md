@@ -28,6 +28,30 @@ A component that wraps [tooltip.js](https://popper.js.org/tooltip-documentation.
 
 The `options` parameter accepts a hash of properties as supported by [tooltip.js](https://popper.js.org/tooltip-documentation.html), `placement` being the most common one.
 
+### courb-button
+
+A simple component the renders a button tag. Positional params will be applied to element modifiers following the BEM CSS naming convention and create different button versions.
+
+```
+  {{#courb-button "green"}}my button{{/courb-button}}
+```
+
+Will result in following HTML:
+
+```
+  <button class="courb-button courb-button--green">my button</button>
+```
+
+The Storybook has a display of all implemented styles.
+
+#### Actions
+
+Use the `click` Component property to trigger actions:
+
+```
+  {{#courb-button click=(action "myAction")}}my button{{/my-button}}
+```
+
 ## Storybook
 
 [Storybook](https://storybook.js.org) is a living styleguide. It allows to organize and display components with different states.
@@ -46,8 +70,9 @@ Stories are created in `/stories`. Please see the [Storybook docs](https://story
 
 ### Existign stories:
 
-- `courb-tooltip.js`
-- `fonts.js`
+- courb-tooltip
+- courb-button
+- fonts (WIP)
 
 ## Contributing
 

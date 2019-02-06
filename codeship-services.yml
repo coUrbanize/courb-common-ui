@@ -1,0 +1,4 @@
+courb-common-ui:
+  build:
+    image: courbanize/common_ui
+    dockerfile: Dockerfile

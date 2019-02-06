@@ -12,7 +12,7 @@ export default Component.extend({
     const options = this.options ? copy(this.options) : {};
     // if title is undefined, Tooltip will not instantiate
     options.title = this.title || 'tooltip';
-    const tooltipInstance = new Tooltip(this.element, options);
+    const tooltipInstance = new Tooltip(this.element.firstChild, options);
     set(this, 'tooltip', tooltipInstance);
   },
 

@@ -4,7 +4,19 @@ This Ember addon is a UI component library to share common styles and components
 
 ## Included components
 
-- courb-tooltip
+### courb-tooltip
+
+A component that wraps [tooltip.js](https://popper.js.org/tooltip-documentation.html), to be used as block:
+
+```
+  {{#courb-tooltip
+    title="tooltip text"
+    options=(hash placement="top")}}
+      <button>my button</button>
+  {{/courb-tooltip}}
+```
+
+The `options` parameter accepts a hash of properties as supported by [tooltip.js](https://popper.js.org/tooltip-documentation.html), `placement` being the most common one.
 
 ## Storybook
 
@@ -19,6 +31,7 @@ yarn run storybook
 It will open a browser and display the coUrbanize Common UI storybook at http://localhost:9001 .
 
 ##### Stories:
+
 - `courb-tooltip.js`
 - `fonts.js`
 

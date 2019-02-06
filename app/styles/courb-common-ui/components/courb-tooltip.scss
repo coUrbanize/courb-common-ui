@@ -1,7 +1,9 @@
 .courb-tooltip {
   // sass-lint:disable-block force-attribute-nesting
 
-  & ~ .tooltip {
+  max-width: max-content;
+
+  .tooltip {
     background-color: $slate-dark;
     border-radius: 0.8rem;
     box-shadow: 0 0 2px $black-transparent-20;
@@ -25,7 +27,7 @@
     }
   }
 
-  & ~ .tooltip[x-placement^='top'] {
+  .tooltip[x-placement^='top'] {
     margin-bottom: 10px;
 
     .tooltip-arrow {
@@ -40,7 +42,7 @@
     }
   }
 
-  & ~ .tooltip[x-placement^='bottom'] {
+  .tooltip[x-placement^='bottom'] {
     margin-top: 10px;
 
     .tooltip-arrow {
@@ -55,7 +57,7 @@
     }
   }
 
-  & ~ .tooltip[x-placement^='right'] {
+  .tooltip[x-placement^='right'] {
     margin-left: 10px;
     text-align: left;
 
@@ -71,7 +73,7 @@
     }
   }
 
-  & ~ .tooltip[x-placement^='left'] {
+  .tooltip[x-placement^='left'] {
     margin-right: 10px;
     text-align: right;
 

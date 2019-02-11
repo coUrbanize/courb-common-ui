@@ -17,6 +17,7 @@ storiesOf('courb-button', module)
     'colors',
     () =>
       hbs`{{#courb-button}}default{{/courb-button}}
+        {{#courb-button "blue"}}blue{{/courb-button}}
         {{#courb-button "green"}}green{{/courb-button}}
         {{#courb-button "yellow"}}yellow{{/courb-button}}
         {{#courb-button "gray"}}gray{{/courb-button}}
@@ -33,11 +34,23 @@ storiesOf('courb-button', module)
   .add(
     'border',
     () =>
-      hbs`{{#courb-button "light-gray" "gray-border"}}my button{{/courb-button}}`,
+      hbs`{{#courb-button "light-gray" "gray-border"}}my button{{/courb-button}}
+        {{#courb-button "light-gray" "blue-border"}}my button{{/courb-button}}`,
     {
       notes: {
         markdown:
-          '```{{#courb-button "light-gray" "gray-border"}}my button{{/courb-button}}```'
+          '```{{#courb-button "light-gray" "color-border"}}my button{{/courb-button}}```'
+      }
+    }
+  )
+  .add(
+    'text',
+    () =>
+      hbs`{{#courb-button "light-gray" "blue-text"}}my button{{/courb-button}}`,
+    {
+      notes: {
+        markdown:
+          '```{{#courb-button "light-gray" "blue-text"}}my button{{/courb-button}}```'
       }
     }
   )

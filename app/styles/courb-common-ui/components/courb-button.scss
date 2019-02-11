@@ -41,6 +41,11 @@
     .fa { margin-right: 0.2rem; }
   }
 
+  &--blue {
+    background-color: $blue;
+    &:hover { background-color: $blue-light; }
+  }
+
   &--green {
     background-color: $green;
     &:hover { background-color: $green-light; }
@@ -74,5 +79,13 @@
 
   &--gray-border {
     border: 1px solid $cygnet;
+  }
+
+  &--blue-border {
+    border: 1px solid $blue;
+  }
+
+  &--blue-text {
+    color: $blue;
   }
 }

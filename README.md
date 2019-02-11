@@ -68,7 +68,7 @@ It will open a browser and display the coUrbanize Common UI storybook at http://
 
 Stories are created in `/stories`. Please see the [Storybook docs](https://storybook.js.org/basics/writing-stories/) for details on how to create write stories.
 
-### Existign stories:
+### Existing stories:
 
 - courb-tooltip
 - courb-button

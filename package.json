@@ -33,9 +33,9 @@
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@ember/optional-features": "^0.6.3",
-    "@storybook/addon-notes": "^4.1.11",
-    "@storybook/addon-options": "^4.1.11",
-    "@storybook/ember": "^4.1.11",
+    "@storybook/addon-notes": "^5.0.6",
+    "@storybook/addon-options": "^5.0.6",
+    "@storybook/ember": "^5.0.6",
     "babel-loader": "^8.0.5",
     "babel-plugin-ember-modules-api-polyfill": "^2.6.0",
     "broccoli-asset-rev": "^2.7.0",

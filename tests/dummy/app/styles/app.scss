@@ -4,6 +4,5 @@
 @import 'courb-common-ui/components/courb-button';
 
 body {
-  @extend %base-font;
-  margin: 2rem;
+  --brand-primary: #0fbb8e;
 }

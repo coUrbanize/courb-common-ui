@@ -19,3 +19,11 @@
 .courb-input {
   @apply .relative .flex .justify-between .items-center .h-16 .m-0 .p-4 .bg-grey-lightest .border .border-grey .border-solid;
 }
+
+.courb-char-count {
+  @apply .text-sm .font-light;
+}
+
+.courb-char-count.bounce-bottom {
+  @apply .absolute .pin-b .pin-r;
+}

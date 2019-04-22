@@ -10,6 +10,7 @@ Router.map(function() {
   docsRoute(this, function() {
     /* Your docs routes go here */
     this.route('form-elements');
+    this.route('colors');
   });
 });
 

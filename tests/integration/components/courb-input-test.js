@@ -15,6 +15,7 @@ module('Integration | Component | courb-input', function(hooks) {
     assert.dom('input').hasValue('my value');
     assert.dom('input').hasAttribute('name', 'my-name');
     assert.dom('input').hasAttribute('placeholder', 'my placeholder text');
+    assert.dom('input').doesNotHaveAttribute('disabled');
 
     await render(hbs`
       {{#courb-input}}
@@ -44,5 +45,10 @@ module('Integration | Component | courb-input', function(hooks) {
     await fillIn('input', 'my input is too long');
     assert.dom('input').hasValue('my');
     assert.equal(this.inputValue, 'my');
+  });
+
+  test('it sets disabled attribute', async function(assert) {
+    await render(hbs`{{courb-input disabled=true}}`);
+    assert.dom('input').hasAttribute('disabled', '');
   });
 });

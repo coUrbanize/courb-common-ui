@@ -20,6 +20,10 @@
   @apply .relative .flex .justify-between .items-center .h-16 .m-0 .p-4 .bg-grey-lightest .border .border-grey .border-solid;
 }
 
+.courb-input input[disabled] {
+  @apply .cursor-not-allowed;
+}
+
 .courb-char-count {
   @apply .text-sm .font-light;
 }

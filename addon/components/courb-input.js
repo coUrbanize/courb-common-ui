@@ -39,19 +39,27 @@ export default Component.extend({
   maxLength: null,
 
   /**
-   * <input/> type attripute
+   * <input> type attripute
    * @type String
    */
   type: 'text',
 
   /**
-   * <input/> placeholder attribute
+   * <input> placeholder attribute
    * @type String?
    */
   placeholder: null,
 
+  /**
+   * <input> disabled attribute
+   * @type Boolean?
+   */
+  disabled: false,
+
   actions: {
     /**
+     * Call given `oninput` action with input value. If `maxLength` property is
+     * set, the char number of value will be limited to it.
      * @action setValidProperty
      * @param { target } HTMLInputEvent
      */

@@ -17,6 +17,9 @@ module('Integration | Component | courb-input', function(hooks) {
     assert.dom('input').hasAttribute('placeholder', 'my placeholder text');
     assert.dom('input').doesNotHaveAttribute('disabled');
 
+    await fillIn('input', 'my new value');
+    assert.dom('input').hasValue('my new value');
+
     await render(hbs`
       {{#courb-input}}
         <span class="wrapped-content">hello courb-input</span>

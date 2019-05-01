@@ -57,6 +57,14 @@ export default Component.extend({
   disabled: false,
 
   /**
+   * Action handler for <input> input event
+   * @type Action?
+   */
+  oninput() {
+    return;
+  },
+
+  /**
    * Action handler for <input> blur event
    * @type Action?
    */

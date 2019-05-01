@@ -56,6 +56,22 @@ export default Component.extend({
    */
   disabled: false,
 
+  /**
+   * Action handler for <input> blur event
+   * @type Action?
+   */
+  onblur() {
+    return;
+  },
+
+  /**
+   * Action handler for <input> focus event
+   * @type Action?
+   */
+  onfocus() {
+    return;
+  },
+
   actions: {
     /**
      * Call given `oninput` action with input value. If `maxLength` property is

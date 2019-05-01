@@ -1,6 +1,6 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
-import { render, fillIn } from '@ember/test-helpers';
+import { render, fillIn, focus, blur } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
 module('Integration | Component | courb-input', function(hooks) {
@@ -50,5 +50,20 @@ module('Integration | Component | courb-input', function(hooks) {
   test('it sets disabled attribute', async function(assert) {
     await render(hbs`{{courb-input disabled=true}}`);
     assert.dom('input').hasAttribute('disabled', '');
+  });
+
+  test('it calls external focus and blur actions', async function(assert) {
+    assert.expect(4);
+    this.set('onfocus', event => {
+      assert.ok(event instanceof Event, 'action is called with event argument');
+      assert.equal(event.type, 'focus', 'event argument is of type "focus"');
+    });
+    this.set('onblur', event => {
+      assert.ok(event instanceof Event, 'action is called with event argument');
+      assert.equal(event.type, 'blur', 'event argument is of type "blur"');
+    });
+    await render(hbs`{{courb-input onfocus=onfocus onblur=onblur}}`);
+    await focus('input');
+    await blur('input');
   });
 });

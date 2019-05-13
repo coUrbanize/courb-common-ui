@@ -4,5 +4,18 @@
 @import 'courb-common-ui/components/courb-button';
 
 body {
+  // addon docs main color
   --brand-primary: #0fbb8e;
+}
+
+.color-swatch {
+  display: inline-block;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  margin: 1rem 0;
+
+  .patch {
+    width: 120px;
+    height: 80px;
+  }
 }

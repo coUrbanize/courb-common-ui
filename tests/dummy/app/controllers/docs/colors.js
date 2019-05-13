@@ -1,43 +1,67 @@
-import Controller from "@ember/controller";
+import Controller from '@ember/controller';
+import tailwindColors from '@courbanize/courb-common-ui/tailwind/config/colors';
 
 export default Controller.extend({
   init() {
     this._super(...arguments);
-    const greens = [
-      { name: 'lightgreen', base: '#53ceac'},
-      { name: 'green', base: '#2fb390'},
-      { name: 'bluegreen', base: '#32af8e'},
-      { name: 'turquoise', base: '#b3e4d7' },
-      { name: 'darkturquoise', base: '#9ac0b6' },
-      { name: 'darkbluegreen', base: '#197979' },
-    ];
-    const yellows = [
-      { name: 'lightyellow', base: '#fcc83f' },
-      { name: 'yellow', base: '#fdc92a' },
-      { name: 'darkyellow', base: '#d5aa25' },
-    ];
-    const blues = [
-      { name: 'lightblue', base: '#a7ddf6' },
-      { name: 'brightblue', base: '#008abb' },
-      { name: 'mediumblue', base: '#09c' },
-      { name: 'cobalt', base: '#3666c6' },
-      { name: 'blue', base: '#347192' },
-      { name: 'deepblue', base: '#213949' },
-    ];
-    const grays = [
-      { name: 'graygreen', base: '#9ac0b6'},
-      { name: 'asphalt', base: '#6a7b82' },
-      { name: 'darkasphalt', base: '#324349' },
-    ];
-    const reds = [
-      { name: 'lightred', base: '#f6a2a2' },
-      { name: 'flatred', base: '#da5151' },
-      { name: 'coralred', base: '#e22a4f' },
-    ];
-    this.set("greens", greens);
-    this.set("yellows", yellows);
-    this.set("blues", blues);
-    this.set("grays", grays);
-    this.set("reds", reds);
+
+    this.set('tailwindColors', tailwindColors);
+    this.set('colorSets', {
+      grayscale: [
+        'cool-gray-100',
+        'cool-gray-200',
+        'cool-gray-300',
+        'cool-gray-400',
+        'cool-gray-500',
+        'cool-gray-600',
+        'cool-gray-700',
+        'cool-gray-800'
+      ],
+      brandColors: [
+        [
+          'courb-orange-100',
+          'courb-orange-300',
+          'courb-orange-400',
+          'courb-orange-500',
+          'courb-orange-800'
+        ],
+        [
+          'courb-yellow-100',
+          'courb-yellow-300',
+          'courb-yellow-400',
+          'courb-yellow-500',
+          'courb-yellow-800'
+        ],
+        [
+          'courb-green-100',
+          'courb-green-300',
+          'courb-green-400',
+          'courb-green-500',
+          'courb-green-800'
+        ],
+        [
+          'courb-blue-100',
+          'courb-blue-300',
+          'courb-blue-400',
+          'courb-blue-500',
+          'courb-blue-800'
+        ]
+      ],
+      mapPinColors: [
+        'pin-green',
+        'pin-yellow',
+        'pin-orange',
+        'pin-red',
+        'pin-purple',
+        'pin-blue',
+        'pin-gray'
+      ],
+      utilityMessageColors: [
+        ['warning-yellow-text', 'warning-yellow', 'warning-yellow-bg'],
+        ['notice-blue-text', 'notice-blue', 'notice-blue-bg'],
+        ['error-red-text', 'error-red', 'error-red-bg'],
+        ['success-green-text', 'success-green', 'success-green-bg']
+      ]
+    });
   }
 });

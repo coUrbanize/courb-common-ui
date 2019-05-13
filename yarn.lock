@@ -5109,14 +5109,6 @@ ember-code-snippet@^2.4.0:
     es6-promise "^1.0.0"
     glob "^7.1.3"
 
-ember-color-palette@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/ember-color-palette/-/ember-color-palette-0.0.5.tgz#5acfe3f3734dff1781455d1821d4933057f27013"
-  integrity sha512-QCm95vvMG99SMRtIEhhmQyIhVE87KKw/PJW1uKvLJPJnzeUA9UsZAt+UMuSCDh61wXlYQ3zD+iydscHK5U9KsQ==
-  dependencies:
-    ember-cli-babel "^7.1.2"
-    ember-cli-htmlbars "^3.0.0"
-
 ember-compatibility-helpers@^1.1.1, ember-compatibility-helpers@^1.1.2, ember-compatibility-helpers@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/ember-compatibility-helpers/-/ember-compatibility-helpers-1.2.0.tgz#feee16c5e9ef1b1f1e53903b241740ad4b01097e"

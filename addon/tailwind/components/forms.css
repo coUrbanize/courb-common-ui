@@ -17,7 +17,7 @@
 */
 
 .courb-input {
-  @apply .relative .flex .justify-between .items-center .h-16 .m-0 .px-4 .bg-grey-lightest .border .border-grey .border-solid;
+  @apply .relative .flex .justify-between .items-center .h-16 .m-0 .px-4 .bg-cool-gray-100 .border .border-cool-gray-500 .border-solid;
 }
 
 .courb-input input[disabled] {

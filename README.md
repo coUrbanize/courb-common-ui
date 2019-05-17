@@ -12,67 +12,28 @@ Run the following code to install the addon in an Ember application:
 ember install @courbanize/courb-common-ui
 ```
 
+## Documentation and Style guide
+
+The addon uses [Ember CLI AddonDocs](https://ember-learn.github.io/ember-cli-addon-docs/) to render documentation and a style guide on Github pages.
+
+[Courb Common UI](https://courbanize.github.io/courb-common-ui/versions/master/)
+
+To publish a new version to Github pages, run:
+
+```
+ember deploy production
+```
+
+*Note: the style guide and documentation content is a Work in Progress.*
+
 ## Included components
 
-### courb-tooltip
+Please refer to the [docs](https://courbanize.github.io/courb-common-ui/versions/master/docs) for detailed information about each component.
 
-A component that wraps [tooltip.js](https://popper.js.org/tooltip-documentation.html), to be used as block:
-
-```
-  {{#courb-tooltip
-    title="tooltip text"
-    options=(hash placement="top")}}
-      <button>my button</button>
-  {{/courb-tooltip}}
-```
-
-The `options` parameter accepts a hash of properties as supported by [tooltip.js](https://popper.js.org/tooltip-documentation.html), `placement` being the most common one.
-
-### courb-button
-
-A simple component the renders a button tag. Positional params will be applied to element modifiers following the BEM CSS naming convention and create different button versions.
-
-```
-  {{#courb-button "green"}}my button{{/courb-button}}
-```
-
-Will result in following HTML:
-
-```
-  <button class="courb-button courb-button--green">my button</button>
-```
-
-The Storybook has a display of all implemented styles.
-
-#### Actions
-
-Use the `click` Component property to trigger actions:
-
-```
-  {{#courb-button click=(action "myAction")}}my button{{/my-button}}
-```
-
-## Storybook
-
-[Storybook](https://storybook.js.org) is a living styleguide. It allows to organize and display components with different states.
-
-Start the Storybook development server with:
-
-```
-yarn run storybook
-```
-
-It will open a browser and display the coUrbanize Common UI storybook at http://localhost:9001.
-
-### Adding stories
-
-Stories are created in `/stories`. Please see the [Storybook docs](https://storybook.js.org/basics/writing-stories/) for details on how to create write stories.
-
-### Existing stories:
-
-- courb-tooltip
-- courb-button
-- fonts (WIP)
+* courb-button
+* courb-tooltip
+* courb-input
+* courb-char-count
 
 ## Contributing
 
@@ -85,7 +46,7 @@ Stories are created in `/stories`. Please see the [Storybook docs](https://story
 ### Running the dummy application
 
 - `ember serve`
-- Visit the dummy application at [http://localhost:4200](http://localhost:4200).
+- Visit the documentation and style guide at [http://localhost:4200](http://localhost:4200).
 
 For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
 

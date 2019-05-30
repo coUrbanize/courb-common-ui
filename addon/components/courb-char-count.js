@@ -33,26 +33,30 @@ export default Component.extend({
 
   /**
    * The character count
+   * @argument count
    * @type Number
    */
   count: 0,
 
   /**
    * The number of maximum possible characters
+   * @argument maxChars
    * @type Number
    */
   maxChars: 0,
 
   /**
    * The character threshold when this component should become visible
+   * @argument showAt
    * @type Number?
    */
   showAt: 0,
 
   /**
-   * The animation effect how the component will become visible.
-   * Options are: bounce-right, bounce-bottom
-   * @type String?
+   * The (optional) animation effect how the component will become visible.
+   * Default is no animation.
+   * @argument animation
+   * @type 'bounce-right'|'bounce-bottom'
    */
   animation: null,
 

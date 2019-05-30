@@ -22,42 +22,49 @@ export default Component.extend({
 
   /**
    * The input name
+   * @argument name
    * @type String?
    */
   name: null,
 
   /**
    * The input value
+   * @argument value
    * @type String?
    */
   value: null,
 
   /**
    * Maximum length of the value, will be enforced in input-action
+   * @argument maxLength
    * @type Number?
    */
   maxLength: null,
 
   /**
-   * <input> type attripute
+   * `<input>` type attripute
+   * @argument type
    * @type String
    */
   type: 'text',
 
   /**
-   * <input> placeholder attribute
+   * `<input>` placeholder attribute
+   * @argument placeholder
    * @type String?
    */
   placeholder: null,
 
   /**
-   * <input> disabled attribute
+   * `<input>` disabled attribute
+   * @argument disabled
    * @type Boolean?
    */
   disabled: false,
 
   /**
-   * Action handler for <input> input event
+   * Action handler for `<input>` input event
+   * @argument oninput
    * @type Action?
    */
   oninput() {
@@ -65,7 +72,8 @@ export default Component.extend({
   },
 
   /**
-   * Action handler for <input> blur event
+   * Action handler for `<input>` blur event
+   * @argument onblur
    * @type Action?
    */
   onblur() {
@@ -73,7 +81,8 @@ export default Component.extend({
   },
 
   /**
-   * Action handler for <input> focus event
+   * Action handler for `<input>` focus event
+   * @argument onfocus
    * @type Action?
    */
   onfocus() {

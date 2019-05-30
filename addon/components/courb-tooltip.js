@@ -4,16 +4,20 @@ import { set } from '@ember/object';
 import { copy } from '@ember/object/internals';
 import Tooltip from 'tooltip.js';
 
+// TODO: warning of "missing item type"
+// WARNING:  @courbanize/courb-common-ui/components/courb-tooltip.js:7: Missing item type
+
 /**
  * A component that wraps [tooltip.js](https://popper.js.org/tooltip-documentation.html), to be used as block:
  *
- * ```
+ * ```hbs
  *   {{#courb-tooltip
  *     title="tooltip text"
  *     options=(hash placement="top")}}
  *       <button>my button</button>
  *   {{/courb-tooltip}}
  * ```
+ * @class {{courb-tooltip}}
  */
 export default Component.extend({
   layout,
@@ -23,7 +27,8 @@ export default Component.extend({
    * Tooltip.js options: a hash of supported key/value pairs as supported
    * by [tooltip.js](https://popper.js.org/tooltip-documentation.html),
    * `placement` being the most common one.
-   * @ype Object?
+   * @argument options
+   * @type Object?
    */
   options: null,
 

@@ -16,8 +16,7 @@ import layout from '../templates/components/courb-char-count';
  * }}
  * ```
  *
- * @class CourbCharCount
- * @public
+ * @class {{courb-char-count}}
  */
 export default Component.extend({
   layout,

@@ -27,8 +27,7 @@ import { set } from '@ember/object';
  * {{/courb-button}}
  * ```
  *
- * @class CourbButton
- * @type Ember.Component
+ * @class {{courb-button}}
  */
 const CourbButton = Component.extend({
   layout,

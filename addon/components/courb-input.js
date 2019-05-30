@@ -13,8 +13,7 @@ import layout from '../templates/components/courb-input';
  * }}
  * ```
  *
- * @class CourbInput
- * @public
+ * @class {{courb-input}}
  */
 export default Component.extend({
   layout,

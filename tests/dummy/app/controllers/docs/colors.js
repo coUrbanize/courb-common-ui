@@ -7,6 +7,8 @@ export default Controller.extend({
 
     this.set('tailwindColors', tailwindColors);
     this.set('colorSets', {
+      base: ['black', 'white'],
+      transparency: ['transparent', 'transparent-black-20'],
       grayscale: [
         'cool-gray-100',
         'cool-gray-200',
@@ -61,6 +63,12 @@ export default Controller.extend({
         ['notice-blue-text', 'notice-blue', 'notice-blue-bg'],
         ['error-red-text', 'error-red', 'error-red-bg'],
         ['success-green-text', 'success-green', 'success-green-bg']
+      ],
+      otherBrands: [
+        'google-red',
+        'google-red-light',
+        'facebook-blue',
+        'facebook-blue-light'
       ]
     });
   }

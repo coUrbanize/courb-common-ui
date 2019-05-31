@@ -16,6 +16,11 @@ The color palette is currently implemented in Tailwind and available via its uti
   {{demo.snippet 'color-demo.hbs'}}
 {{/docs-demo}}
 
+### Base
+{{#each colorSets.base as |colorName|}}
+  {{color-swatch name=colorName hexcode=(get tailwindColors colorName)}}
+{{/each}}
+
 ### Grayscale
 {{#each colorSets.grayscale as |colorName|}}
   {{color-swatch name=colorName hexcode=(get tailwindColors colorName)}}
@@ -42,4 +47,14 @@ The color palette is currently implemented in Tailwind and available via its uti
       {{color-swatch name=colorName hexcode=(get tailwindColors colorName)}}
     {{/each}}
   </div>  
+{{/each}}
+
+### Transparent
+{{#each colorSets.transparency as |colorName|}}
+  {{color-swatch name=colorName hexcode=(get tailwindColors colorName)}}
+{{/each}}
+
+### Other Brand Colors
+{{#each colorSets.otherBrands as |colorName|}}
+  {{color-swatch name=colorName hexcode=(get tailwindColors colorName)}}
 {{/each}}

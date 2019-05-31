@@ -4,9 +4,9 @@
   max-width: max-content;
 
   .tooltip {
-    background-color: $slate-dark;
+    background-color: $cool-gray-600;
     border-radius: 0.8rem;
-    box-shadow: 0 0 2px $black-transparent-20;
+    box-shadow: 0 0 2px $transparent-black-20;
     color: $white;
     font-size: 1.2rem;
     font-weight: 300;
@@ -18,7 +18,7 @@
     z-index: 2000;
 
     .tooltip-arrow {
-      border-color: $slate-dark;
+      border-color: $cool-gray-600;
       border-style: solid;
       height: 0;
       margin: 10px;

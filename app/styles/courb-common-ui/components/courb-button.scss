@@ -43,28 +43,29 @@
   }
 
   &--blue {
-    background-color: $blue;
-    &:hover { background-color: $blue-light; }
+
+    background-color: $courb-blue-400;
+    &:hover { background-color: $courb-blue-300; }
   }
 
   &--green {
-    background-color: $green;
-    &:hover { background-color: $green-light; }
+    background-color: $courb-green-400;
+    &:hover { background-color: $courb-green-300; }
   }
 
   &--yellow {
-    background-color: $marigold;
-    &:hover { background-color: $marigold-light; }
+    background-color: $courb-yellow-400;
+    &:hover { background-color: $courb-yellow-300; }
   }
 
   &--gray {
-    background-color: $cygnet;
-    &:hover { background-color: $cygnet-light; }
+    background-color: $cool-gray-300;
+    &:hover { background-color: $cool-gray-200; }
   }
 
   &--light-gray {
-    background-color: $white-smoke;
-    color: $slate-light;
+    background-color: $cool-gray-100;
+    color: $cool-gray-700;
     &:hover { background-color: $white; }
   }
 
@@ -79,14 +80,14 @@
   }
 
   &--gray-border {
-    border: 1px solid $cygnet;
+    border: 1px solid $cool-gray-300;
   }
 
   &--blue-border {
-    border: 1px solid $blue;
+    border: 1px solid $courb-blue-400;
   }
 
   &--blue-text {
-    color: $blue;
+    color: $courb-blue-400;
   }
 }

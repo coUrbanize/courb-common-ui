@@ -5,7 +5,7 @@ $secondary-font-family: 'Roboto', sans-serif;
 
 // Fonts
 %base-font {
-  color: $slate-light;
+  color: $cool-gray-700;
   font-family: $primary-font-family;
   font-size: 10px;
 }
@@ -14,7 +14,7 @@ $secondary-font-family: 'Roboto', sans-serif;
   font-family: $primary-font-family;
 
   &--medium {
-    color: $slate-light;
+    color: $cool-gray-700;
     font-size: 1.6rem;
     letter-spacing: 0;
     line-height: 2.8rem;
@@ -22,7 +22,7 @@ $secondary-font-family: 'Roboto', sans-serif;
 }
 
 .h1 {
-  color: $slate-light;
+  color: $cool-gray-700;
   font-family: $secondary-font-family;
   font-style: normal;
   letter-spacing: 0;
@@ -41,11 +41,11 @@ $secondary-font-family: 'Roboto', sans-serif;
   }
 
   &--light-gray {
-    color: $white-smoke;
+    color: $cool-gray-100;
   }
 
   &--forest-green {
-    color: $forest-green;
+    color: $courb-green-800;
   }
 }
 
@@ -77,15 +77,15 @@ $secondary-font-family: 'Roboto', sans-serif;
   }
 
   &--green {
-    color: $green-light;
+    color: $courb-green-500;
   }
 
-  &--slate-light {
-    color: $slate-light;
+  &--cool-gray-700 {
+    color: $cool-gray-700;
   }
 
   &--slate-dark {
-    color: $slate-dark;
+    color: $cool-gray-600;
   }
 }
 
@@ -127,15 +127,15 @@ $secondary-font-family: 'Roboto', sans-serif;
   }
 
   &--green {
-    color: $green-light;
+    color: $courb-green-500;
   }
 
   &--slate-dark {
-    color: $slate-dark;
+    color: $cool-gray-600;
   }
 
   &--forest-green {
-    color: $forest-green;
+    color: $courb-green-800;
   }
 }
 
@@ -147,6 +147,6 @@ $secondary-font-family: 'Roboto', sans-serif;
   text-align: center;
 
   &--slate-dark {
-    color: $slate-dark;
+    color: $cool-gray-600;
   }
 }

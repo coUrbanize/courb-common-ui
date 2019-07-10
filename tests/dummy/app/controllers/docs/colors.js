@@ -59,10 +59,10 @@ export default Controller.extend({
         'pin-gray'
       ],
       utilityMessageColors: [
-        ['warning-yellow-text', 'warning-yellow', 'warning-yellow-bg'],
-        ['notice-blue-text', 'notice-blue', 'notice-blue-bg'],
-        ['error-red-text', 'error-red', 'error-red-bg'],
-        ['success-green-text', 'success-green', 'success-green-bg']
+        ['warning-yellow', 'warning-yellow-bg'],
+        ['notice-blue', 'notice-blue-bg'],
+        ['error-red', 'error-red-bg'],
+        ['success-green', 'success-green-bg']
       ],
       otherBrands: [
         'google-red',

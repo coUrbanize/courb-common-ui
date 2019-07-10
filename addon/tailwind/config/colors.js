@@ -61,21 +61,17 @@ export default {
   'pin-blue': '#3961E5',
   'pin-gray': '#676767',
 
-  'warning-yellow-text': '#8C6C1C',
+  'warning-yellow-bg': '#8C6C1C',
   'warning-yellow': '#FCC83F',
-  'warning-yellow-bg': '#FFF8D1',
 
-  'notice-blue-text': '#4075B6',
+  'notice-blue-bg': '#4075B6',
   'notice-blue': '#6DA2FF',
-  'notice-blue-bg': '#EBF1FF',
 
-  'error-red-text': '#BD3E49',
+  'error-red-bg': '#BD3E49',
   'error-red': '#FF526F',
-  'error-red-bg': '#FFE6EB',
 
-  'success-green-text': '#148041',
+  'success-green-bg': '#148041',
   'success-green': '#08C14C',
-  'success-green-bg': '#D7FFE8',
 
   'google-red': '#e95638',
   'google-red-light': '#e96c54',

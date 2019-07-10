@@ -11,6 +11,10 @@ The color palette is currently implemented in Tailwind and available via its uti
     <p class="text-courb-blue-500 bg-courb-yellow-300 border border-courb-green-500 p-4">
       Blue text on yellow background with green border
     </p>
+
+    <div class="text-white bg-success-green-bg p-4 rounded">
+      Success Toast Message
+    </div>
   {{/demo.example}}
 
   {{demo.snippet 'color-demo.hbs'}}

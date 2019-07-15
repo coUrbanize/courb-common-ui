@@ -56,6 +56,12 @@
     &:hover { background-color: $courb-green-300; }
   }
 
+  &--white {
+    background-color: $white;
+    color: $cool-gray-700;
+    &:hover { background-color: $cool-gray-100; }
+  }
+
   &--yellow {
     background-color: $courb-yellow-400;
     &:hover { background-color: $courb-yellow-300; }

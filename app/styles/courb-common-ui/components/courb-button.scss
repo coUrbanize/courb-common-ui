@@ -1,13 +1,16 @@
 .courb-button {
+  align-items: center;
   border: 0;
   border-radius: 2.2rem;
   box-shadow: none;
   color: $white;
   cursor: pointer;
+  display: flex;
   font-family: $primary-font-family;
   font-size: 1.4rem;
   font-weight: 500;
   height: 4.4rem;
+  justify-content: center;
   letter-spacing: 0.15rem;
   margin-bottom: 10px;
   outline: none;

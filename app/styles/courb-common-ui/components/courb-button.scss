@@ -19,6 +19,10 @@
 
   .fa { margin-right: 0.6rem; }
 
+  &:focus {
+    outline: none;
+  }
+
   &:disabled, &[disabled]{
     cursor: not-allowed;
     opacity: 0.6;

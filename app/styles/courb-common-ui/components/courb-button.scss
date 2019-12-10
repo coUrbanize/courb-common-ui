@@ -33,6 +33,7 @@
     align-items: center;
     display: inline-flex;
     justify-content: center;
+    text-decoration: none;
 
     &:hover, &:active, &:focus {
       color: $white;
@@ -50,7 +51,6 @@
   }
 
   &--blue {
-
     background-color: $courb-blue-400;
     &:hover { background-color: $courb-blue-300; }
   }
@@ -102,5 +102,16 @@
 
   &--blue-text {
     color: $courb-blue-400;
+  }
+
+  &--green-outlined {
+    border: 1px solid $courb-green-400;
+    color: $courb-green-400;
+
+    &:hover, &:active, &:focus {
+      border-color: $courb-green-300;
+      color: $courb-green-300;
+      text-decoration: none;
+    }
   }
 }

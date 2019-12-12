@@ -56,8 +56,8 @@
   }
 
   &--green {
-    background-color: $courb-green-400;
-    &:hover { background-color: $courb-green-300; }
+    background-color: $courb-green-500;
+    &:hover { background-color: $courb-green-400; }
   }
 
   &--white {
@@ -105,12 +105,12 @@
   }
 
   &--green-outlined {
-    border: 1px solid $courb-green-400;
-    color: $courb-green-400;
+    border: 1px solid $courb-green-500;
+    color: $courb-green-500;
 
     &:hover, &:active, &:focus {
-      border-color: $courb-green-300;
-      color: $courb-green-300;
+      border-color: $courb-green-400;
+      color: $courb-green-400;
       text-decoration: none;
     }
   }
